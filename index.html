@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <nav><button id="addTask">add task</button></nav>
+    <div class="container">
+        <div id="todo" class="cardContainer">
+            <h2>TODO</h2>
+         
+        </div>
+        <div id="inProgress" class="cardContainer">
+            <h2>IN PROGRESS</h2>
+            
+        </div>
+        <div id="done" class="cardContainer">
+            <h2>DONE</h2>
+           
+        </div>
+        <div class="formContainer">
+            <form id="form" action="#">
+                <label for="name"> Name :</label>
+                <input type="text" id="name" name="name">
+                <label for="type"> type :</label>
+                <select name="type" id="type">
+                    <option value="todo">TODO</option>
+                    <option value="inprogress">IN PROGRESS</option>
+                    <option value="done">DONE</option>
+                </select>
+                <button id="submitBtn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./script.js"></script>
